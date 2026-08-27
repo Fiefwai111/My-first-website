@@ -21,6 +21,7 @@
 
   --cream: #f8f3e6;       /* from Fullgreen packaging */
   --cream-deep: #efe6d0;
+  --bg-page: #fbf7ee;     /* soft, organic off-white used site-wide */
 
   --ink: #17211a;
   --ink-soft: #47564b;
@@ -52,7 +53,7 @@ body {
   margin: 0;
   font-family: var(--font-th);
   color: var(--ink);
-  background: var(--white);
+  background: var(--bg-page);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
@@ -173,7 +174,7 @@ p { color: var(--ink-soft); }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255,255,255,0.92);
+  background: rgba(251,247,238,0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -284,7 +285,7 @@ p { color: var(--ink-soft); }
 /* ---------- hero ---------- */
 .hero {
   position: relative;
-  background: linear-gradient(180deg, var(--green-050) 0%, var(--white) 100%);
+  background: linear-gradient(180deg, var(--green-050) 0%, var(--bg-page) 100%);
   overflow: hidden;
 }
 .hero .container {
