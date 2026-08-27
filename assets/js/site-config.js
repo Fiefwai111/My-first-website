@@ -29,9 +29,8 @@ window.TRC_CONFIG = {
   certifications: [
     { th: "มาตรฐานส่งออกสหรัฐอเมริกา", en: "US export standard", detail: "" },
     { th: "มาตรฐานส่งออกญี่ปุ่น", en: "Japan export standard", detail: "" },
-    { th: "รับรองฮาลาล", en: "Halal certified", detail: "" },
     { th: "วีแกน 100%", en: "100% Vegan certified", detail: "" },
     { th: "ผลตรวจวิตามินบี 12", en: "Vitamin B12 lab report", detail: "" },
-    { th: "ผลตรวจ E. coli (ตรวจไม่พบเชื้อ)", en: "E. coli lab report (not detected)", detail: "" }
+    { th: "ใบรับรอง GMP (เพาะเลี้ยงระบบปิด)", en: "GMP certificate (closed-system cultivation)", detail: "" }
   ]
 };
