@@ -447,6 +447,13 @@ p { color: var(--ink-soft); }
 }
 .price-note { font-weight: 700; color: var(--green-700); font-size: 0.88rem; }
 
+/* certificate document cards (real cert image placeholders) */
+.cert-doc-grid { align-items: start; }
+.cert-doc-card { display: flex; flex-direction: column; text-align: center; }
+.cert-doc-card .ph-img { margin-bottom: 16px; flex-shrink: 0; }
+.cert-doc-card h4 { font-weight: 800; color: var(--green-900); font-size: 0.98rem; margin-bottom: 4px; }
+.cert-doc-card span { font-size: 0.82rem; color: var(--ink-faint); }
+
 /* certification badges */
 .cert-badge {
   display: flex;

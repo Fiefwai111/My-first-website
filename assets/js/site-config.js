@@ -32,6 +32,6 @@ window.TRC_CONFIG = {
     { th: "รับรองฮาลาล", en: "Halal certified", detail: "" },
     { th: "วีแกน 100%", en: "100% Vegan certified", detail: "" },
     { th: "ผลตรวจวิตามินบี 12", en: "Vitamin B12 lab report", detail: "" },
-    { th: "ผลตรวจคาร์บอนฟุตพรินต์ (Carbon Footprint)", en: "Carbon footprint verification", detail: "" }
+    { th: "ผลตรวจ E. coli (ตรวจไม่พบเชื้อ)", en: "E. coli lab report (not detected)", detail: "" }
   ]
 };
