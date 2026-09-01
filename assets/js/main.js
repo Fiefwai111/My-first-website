@@ -130,6 +130,17 @@
         el.classList.add("placeholder-tag");
       }
     });
+    document.querySelectorAll("[data-cfg-html]").forEach(function (el) {
+      var key = el.getAttribute("data-cfg-html");
+      var val = cfg[key];
+      var emptyText = el.getAttribute("data-cfg-empty");
+      if (val) {
+        el.innerHTML = val;
+      } else if (emptyText) {
+        el.textContent = emptyText;
+        el.classList.add("placeholder-tag");
+      }
+    });
     document.querySelectorAll("[data-cfg-href]").forEach(function (el) {
       var key = el.getAttribute("data-cfg-href");
       var val = cfg[key];

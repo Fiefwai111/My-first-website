@@ -12,6 +12,10 @@ window.TRC_CONFIG = {
   lineUrl: "https://lin.ee/YZVohkc",
   lineLabel: "@thairivercaviar", // change to your real LINE OA display name if different
 
+  // Social channels — shown in the footer "Contact" list.
+  tiktokUrl: "https://www.tiktok.com/@thairivercaviar?_r=1&_t=ZS-99MV9kBi0W4",
+  facebookUrl: "https://www.facebook.com/share/19bbik582o/?mibextid=wwXIfr",
+
   // Add a real number once you have one, e.g. "+66 89 123 4567"
   phone: "",
 
@@ -19,8 +23,9 @@ window.TRC_CONFIG = {
   // Once you send the real link, paste it here and the "Shop now" buttons go live.
   shopUrl: "",
 
-  // Farm / company address — shown in the footer and Contact page once filled in.
-  address: "",
+  // Farm / company address — shown in the footer and Contact page. HTML allowed
+  // (e.g. <br>) since it's rendered via data-cfg-html.
+  address: "Thai River Caviar Co., Ltd.<br>37/9 หมู่ 2 ต.บึงทองหลาง อ.ลำลูกกา จ.ปทุมธานี 12150 (สำนักงานใหญ่)<br>37/9 Moo 2, T. Buengthonglang, A. Lumlukka, Pathumthani 12150, Thailand (Head Office)",
 
   // Legal / registration number, if you want it displayed for B2B credibility.
   companyRegNo: "",
