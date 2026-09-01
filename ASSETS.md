@@ -37,6 +37,19 @@ Japan/US export standard are mentioned on the same page as standards met, but do
 | `assets/images/product-fresh.jpg` | Fresh Wolffia product card | 800×800px (square) |
 | `assets/images/product-jelly.jpg` | TA-TO Wolffia Jelly product card | 800×800px (square) |
 | `assets/images/product-jelly-lifestyle.jpg` | B2C jelly lifestyle photo | 1000×750px |
+
+## TA-TO Jelly photo carousel (`products.html`, Jelly section)
+
+The Jelly product detail section has a swipeable 6-photo gallery (arrows + dots, works with touch swipe too). Each slot below is independent — you can reuse the marketing graphics you already have.
+
+| File | Suggested content | Suggested size |
+|---|---|---|
+| `assets/images/product-jelly-1.jpg` | Hero product shot (box + jelly stick) | 1000×1000px (square) |
+| `assets/images/product-jelly-2.jpg` | Lab-tested standards graphic (FQA LAB / ALS logos) | 1000×1000px (square) |
+| `assets/images/product-jelly-3.jpg` | "Best time to eat" lifestyle collage | 1000×1000px (square) |
+| `assets/images/product-jelly-4.jpg` | Texture close-up (dried Wolffia flecks) | 1000×1000px (square) |
+| `assets/images/product-jelly-5.jpg` | Key ingredients graphic | 1000×1000px (square) |
+| `assets/images/product-jelly-6.jpg` | Additional product photo | 1000×1000px (square) |
 | `assets/images/founder.jpg` | Founder/team photo (circular crop) | 400×400px (square) |
 
 ## Our Story (`about.html`)

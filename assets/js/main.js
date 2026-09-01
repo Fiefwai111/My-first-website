@@ -85,6 +85,39 @@
     });
   }
 
+  function initGalleryCarousels() {
+    document.querySelectorAll(".gallery-carousel").forEach(function (car) {
+      var track = car.querySelector(".gallery-track");
+      var slides = car.querySelectorAll(".gallery-slide");
+      var dots = car.querySelectorAll(".gallery-dot");
+      var prev = car.querySelector(".gallery-prev");
+      var next = car.querySelector(".gallery-next");
+      if (!track || !slides.length) return;
+
+      function currentIndex() {
+        return Math.round(track.scrollLeft / track.clientWidth);
+      }
+      function goTo(i) {
+        i = Math.max(0, Math.min(slides.length - 1, i));
+        track.scrollTo({ left: slides[i].offsetLeft, behavior: "smooth" });
+      }
+      function updateDots() {
+        var idx = currentIndex();
+        dots.forEach(function (d, i) { d.classList.toggle("active", i === idx); });
+      }
+      if (prev) prev.addEventListener("click", function () { goTo(currentIndex() - 1); });
+      if (next) next.addEventListener("click", function () { goTo(currentIndex() + 1); });
+      dots.forEach(function (d, i) {
+        d.addEventListener("click", function () { goTo(i); });
+      });
+      track.addEventListener("scroll", function () {
+        clearTimeout(track._dotTimer);
+        track._dotTimer = setTimeout(updateDots, 100);
+      });
+      updateDots();
+    });
+  }
+
   function bindConfig() {
     document.querySelectorAll("[data-cfg]").forEach(function (el) {
       var key = el.getAttribute("data-cfg");
@@ -182,6 +215,7 @@
     initLangSwitch();
     initNavToggle();
     initImageFallbacks();
+    initGalleryCarousels();
     bindConfig();
     initMailtoForms();
     initYear();

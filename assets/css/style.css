@@ -368,6 +368,56 @@ p { color: var(--ink-soft); }
 .rounded-lg { border-radius: var(--radius-lg); overflow: hidden; }
 .shadowed { box-shadow: var(--shadow-md); }
 
+/* ---------- swipeable image gallery / carousel ---------- */
+.gallery-carousel { position: relative; }
+.gallery-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  scrollbar-width: none;
+}
+.gallery-track::-webkit-scrollbar { display: none; }
+.gallery-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  aspect-ratio: 1 / 1;
+}
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  color: var(--green-800);
+  z-index: 2;
+}
+.gallery-arrow svg { width: 20px; height: 20px; }
+.gallery-prev { left: 12px; }
+.gallery-next { right: 12px; }
+.gallery-dots { display: flex; justify-content: center; gap: 8px; margin-top: 14px; }
+.gallery-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: width 0.2s, background 0.2s, border-radius 0.2s;
+}
+.gallery-dot.active { background: var(--green-600); width: 22px; border-radius: 4px; }
+
 /* ---------- trust strip ---------- */
 .trust-strip { padding: 34px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--white); }
 .trust-grid {
@@ -675,6 +725,58 @@ p { color: var(--ink-soft); }
 .list-check { display: flex; flex-direction: column; gap: 12px; }
 .list-check li { display: flex; gap: 10px; align-items: flex-start; color: var(--ink-soft); }
 .list-check svg { width: 20px; height: 20px; color: var(--green-600); flex-shrink: 0; margin-top: 2px; }
+
+/* ---------- ingredient list (TA-TO jelly) ---------- */
+.ingredient-list { display: flex; flex-direction: column; gap: 16px; }
+.ingredient-item { display: flex; gap: 10px; align-items: flex-start; }
+.ingredient-item svg { width: 18px; height: 18px; color: var(--purple-600); flex-shrink: 0; margin-top: 3px; }
+.ingredient-item h4 { font-size: 0.95rem; font-weight: 800; color: var(--green-900); }
+.ingredient-item p { font-size: 0.88rem; color: var(--ink-soft); margin-top: 2px; }
+
+/* ---------- best-time-to-eat mini cards ---------- */
+.usecase-tip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-050);
+  color: var(--green-800);
+  border: 1px solid var(--green-100);
+  border-radius: var(--radius-pill, 999px);
+  padding: 8px 16px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.usecase-tip svg { width: 16px; height: 16px; flex-shrink: 0; }
+.usecase-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+@media (max-width: 620px) { .usecase-grid { grid-template-columns: 1fr; } }
+.usecase-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px;
+}
+.usecase-card h4 { font-size: 0.92rem; font-weight: 800; color: var(--green-900); margin-bottom: 6px; }
+.usecase-card p { font-size: 0.86rem; color: var(--ink-soft); }
+
+/* ---------- lab-tested badges ---------- */
+.lab-badge-row { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 14px; }
+.lab-badge { display: flex; align-items: center; gap: 12px; }
+.lab-badge .lab-badge-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--green-050);
+  border: 1px solid var(--green-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--green-700);
+}
+.lab-badge .lab-badge-icon svg { width: 22px; height: 22px; }
+.lab-badge strong { display: block; font-size: 0.88rem; color: var(--green-900); }
+.lab-badge span { font-size: 0.8rem; color: var(--ink-faint); }
 
 .breadcrumb-hero {
   padding: 46px 0 40px;
