@@ -17,7 +17,7 @@ no server required.
 | `index.html` | Landing page — hero, trust badges, story teaser, products, CTAs |
 | `about.html` | Our Story — R&D timeline, cultivation method, video, people |
 | `products.html` | Dried / Fresh / Jelly product details |
-| `quality.html` | Certifications, B12 data, closed-system GMP cultivation, export standards |
+| `quality.html` | Certifications, B12 data, zero E. coli, closed-system GMP cultivation, export standards |
 | `contact.html` | B2B sample/RFQ form + B2C shop link and interest form |
 
 ## Editing content
@@ -73,7 +73,7 @@ Any static host works. Two easy free options:
 ## Still pending (marked as placeholders on the site)
 
 - Real logo file and farm/product photos + video (see `ASSETS.md`)
-- Certificate names/issuers and lab report documents (Japan/US export standard, Vegan, B12, GMP) — see `ASSETS.md` for the certificate image filenames the site expects
+- Certificate names/issuers and lab report documents (Japan/US export standard, Vegan, B12, GMP, E. coli) — see `ASSETS.md` for the certificate image filenames the site expects
 - Retail shop URL (Shopee/Lazada/LINE MyShop/etc.)
 - Farm/company address, phone number, company registration number
 - Pricing (currently "Request a Quote" for B2B; retail pricing pending)
