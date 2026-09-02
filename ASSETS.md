@@ -38,6 +38,16 @@ Japan/US export standard are mentioned on the same page as standards met, but do
 | `assets/images/product-jelly.jpg` | TA-TO Wolffia Jelly product card | 800×800px (square) |
 | `assets/images/product-jelly-lifestyle.jpg` | B2C jelly lifestyle photo | 1000×750px |
 
+## Fullgreen dried Wolffia photo carousel (`products.html`, Dried section)
+
+The Dried Wolffia product detail section also has a swipeable photo gallery (same arrows + dots as the Jelly one), with 3 placeholder slots:
+
+| File | Suggested content | Suggested size |
+|---|---|---|
+| `assets/images/product-dried-1.jpg` | Box + sachet product shot | 1000×1000px (square) |
+| `assets/images/product-dried-2.jpg` | Powder texture close-up | 1000×1000px (square) |
+| `assets/images/product-dried-3.jpg` | Mixed into a drink / smoothie | 1000×1000px (square) |
+
 ## TA-TO Jelly photo carousel (`products.html`, Jelly section)
 
 The Jelly product detail section has a swipeable 6-photo gallery (arrows + dots, works with touch swipe too). Each slot below is independent — you can reuse the marketing graphics you already have.
