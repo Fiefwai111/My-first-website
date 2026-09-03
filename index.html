@@ -27,6 +27,7 @@
       <a href="about.html" data-th="เรื่องราวของเรา" data-en="Our Story">เรื่องราวของเรา</a>
       <a href="products.html" data-th="ผลิตภัณฑ์" data-en="Products">ผลิตภัณฑ์</a>
       <a href="quality.html" data-th="มาตรฐานและใบรับรอง" data-en="Quality &amp; Standards">มาตรฐานและใบรับรอง</a>
+      <a href="blog.html" data-th="The Green Journal" data-en="The Green Journal">The Green Journal</a>
       <a href="contact.html" data-th="ติดต่อเรา" data-en="Contact">ติดต่อเรา</a>
     </nav>
     <div class="header-actions">
@@ -309,6 +310,101 @@
   </div>
 </section>
 
+<section class="section-alt" id="journal">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" data-th="ความรู้จากฟาร์มของเรา" data-en="Insights From Our Farm">ความรู้จากฟาร์มของเรา</div>
+      <h2 data-th="The Green Journal: วิถีสีเขียว" data-en="The Green Journal: วิถีสีเขียว">The Green Journal: วิถีสีเขียว</h2>
+      <p class="lede" style="margin-top:14px; margin-left:auto; margin-right:auto;" data-th="อัปเดตเทรนด์สุขภาพ เคล็ดลับโภชนาการ และเรื่องเล่าจากฟาร์มนวัตกรรมของเรา" data-en="Fresh health trends, nutrition tips, and stories from our innovation farm.">อัปเดตเทรนด์สุขภาพ เคล็ดลับโภชนาการ และเรื่องเล่าจากฟาร์มนวัตกรรมของเรา</p>
+    </div>
+
+    <!--
+      Journal card template — copy ONE <article class="journal-card">...</article>
+      block, paste it as a new grid item, then just swap:
+        1) the <img src> + alt text (and the ph-label / <code> path to match)
+        2) the journal-tag text (data-th + data-en)
+        3) the journal-date text (data-th + data-en)
+        4) the <h3> title (data-th + data-en)
+        5) the journal-excerpt text (data-th + data-en)
+      Leave the class names and structure untouched and the layout will not break.
+    -->
+    <div class="grid grid-3 journal-grid">
+      <article class="journal-card">
+        <div class="ph-img">
+          <img src="assets/images/journal-01.jpg" alt="วิตามินบี 12 จากพืช: เข้าใจการดูดซึมที่แท้จริงสำหรับสายวีแกน">
+          <div class="ph-fallback">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s7 7.5 7 12a7 7 0 0 1-14 0c0-4.5 7-12 7-12z"/></svg>
+            <span class="ph-label" data-th="ภาพประกอบบทความ 1" data-en="Article photo 1">ภาพประกอบบทความ 1</span>
+            <code>assets/images/journal-01.jpg</code>
+          </div>
+        </div>
+        <div class="journal-card-body">
+          <div class="journal-meta">
+            <span class="journal-tag" data-th="โภชนาการ" data-en="Nutrition">โภชนาการ</span>
+            <span class="journal-date" data-th="3 ก.ย. 2026" data-en="3 Sep 2026">3 ก.ย. 2026</span>
+          </div>
+          <h3 data-th="วิตามินบี 12 จากพืช: เข้าใจการดูดซึมที่แท้จริงสำหรับสายวีแกน" data-en="Plant-Based B12: Understanding Real Absorption for a Vegan Diet">วิตามินบี 12 จากพืช: เข้าใจการดูดซึมที่แท้จริงสำหรับสายวีแกน</h3>
+          <p class="journal-excerpt" data-th="หลายคนเข้าใจผิดว่าพืชไม่มีบี 12 เลย แต่ความจริงคือมีพืชบางชนิด เช่น ไข่ผำ ที่สะสมบี 12 ได้ในระดับที่วัดผลได้จริง บทความนี้พาไปดูกลไกการดูดซึมและวิธีวางแผนมื้ออาหารให้ได้สารอาหารครบถ้วนโดยไม่ต้องพึ่งอาหารเสริมสังเคราะห์" data-en="Many assume plants can't provide B12 at all — but certain species, like Wolffia, accumulate it at levels you can actually measure. We break down the absorption science and how to plan meals that meet your needs without synthetic supplements.">หลายคนเข้าใจผิดว่าพืชไม่มีบี 12 เลย แต่ความจริงคือมีพืชบางชนิด เช่น ไข่ผำ ที่สะสมบี 12 ได้ในระดับที่วัดผลได้จริง บทความนี้พาไปดูกลไกการดูดซึมและวิธีวางแผนมื้ออาหารให้ได้สารอาหารครบถ้วนโดยไม่ต้องพึ่งอาหารเสริมสังเคราะห์</p>
+          <a href="blog.html" class="journal-readmore">
+            <span data-th="อ่านต่อ" data-en="Read More">อ่านต่อ</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="journal-card">
+        <div class="ph-img">
+          <img src="assets/images/journal-02.jpg" alt="5 เมนูไข่ผำเพื่อสุขภาพ ทำง่ายใน 15 นาที">
+          <div class="ph-fallback">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s7 7.5 7 12a7 7 0 0 1-14 0c0-4.5 7-12 7-12z"/></svg>
+            <span class="ph-label" data-th="ภาพประกอบบทความ 2" data-en="Article photo 2">ภาพประกอบบทความ 2</span>
+            <code>assets/images/journal-02.jpg</code>
+          </div>
+        </div>
+        <div class="journal-card-body">
+          <div class="journal-meta">
+            <span class="journal-tag" data-th="สูตรอาหาร" data-en="Recipes">สูตรอาหาร</span>
+            <span class="journal-date" data-th="28 ส.ค. 2026" data-en="28 Aug 2026">28 ส.ค. 2026</span>
+          </div>
+          <h3 data-th="5 เมนูไข่ผำเพื่อสุขภาพ ทำง่ายใน 15 นาที" data-en="5 Healthy Wolffia Recipes You Can Make in 15 Minutes">5 เมนูไข่ผำเพื่อสุขภาพ ทำง่ายใน 15 นาที</h3>
+          <p class="journal-excerpt" data-th="ไข่ผำไม่ได้มีดีแค่คุณค่าทางโภชนาการ แต่ยังปรับใช้กับเมนูอาหารได้หลากหลาย ตั้งแต่สมูทตี้เขียวไปจนถึงซุปโปรตีนสูง เราคัดสูตรที่สมดุลทั้งรสชาติและสารอาหารมาให้ลองทำตามได้ทันที" data-en="Wolffia isn't just nutrient-dense — it's remarkably versatile in the kitchen, from green smoothies to protein-rich soups. We've curated recipes balanced for both flavor and nutrition that you can try today.">ไข่ผำไม่ได้มีดีแค่คุณค่าทางโภชนาการ แต่ยังปรับใช้กับเมนูอาหารได้หลากหลาย ตั้งแต่สมูทตี้เขียวไปจนถึงซุปโปรตีนสูง เราคัดสูตรที่สมดุลทั้งรสชาติและสารอาหารมาให้ลองทำตามได้ทันที</p>
+          <a href="blog.html" class="journal-readmore">
+            <span data-th="อ่านต่อ" data-en="Read More">อ่านต่อ</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="journal-card">
+        <div class="ph-img">
+          <img src="assets/images/journal-03.jpg" alt="วางแผนมื้ออาหารแบบสมดุล: กรอบคิดง่ายๆ สำหรับคนยุ่งทั้งวัน">
+          <div class="ph-fallback">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s7 7.5 7 12a7 7 0 0 1-14 0c0-4.5 7-12 7-12z"/></svg>
+            <span class="ph-label" data-th="ภาพประกอบบทความ 3" data-en="Article photo 3">ภาพประกอบบทความ 3</span>
+            <code>assets/images/journal-03.jpg</code>
+          </div>
+        </div>
+        <div class="journal-card-body">
+          <div class="journal-meta">
+            <span class="journal-tag" data-th="ไลฟ์สไตล์สุขภาพ" data-en="Health Lifestyle">ไลฟ์สไตล์สุขภาพ</span>
+            <span class="journal-date" data-th="22 ส.ค. 2026" data-en="22 Aug 2026">22 ส.ค. 2026</span>
+          </div>
+          <h3 data-th="วางแผนมื้ออาหารแบบสมดุล: กรอบคิดง่ายๆ สำหรับคนยุ่งทั้งวัน" data-en="Balanced Meal Planning: A Simple Framework for Busy People">วางแผนมื้ออาหารแบบสมดุล: กรอบคิดง่ายๆ สำหรับคนยุ่งทั้งวัน</h3>
+          <p class="journal-excerpt" data-th="การกินให้ครบสารอาหารไม่จำเป็นต้องซับซ้อน เพียงเข้าใจสัดส่วนโปรตีน คาร์บ และไขมันที่เหมาะกับไลฟ์สไตล์ของตัวเอง เราสรุปหลักการวางแผนมื้ออาหารที่นำไปใช้ได้จริงแม้ในวันที่เวลาน้อยที่สุด" data-en="Eating a complete diet doesn't have to be complicated. Once you understand the protein, carb, and fat ratios that fit your lifestyle, meal planning becomes second nature — even on your busiest days.">การกินให้ครบสารอาหารไม่จำเป็นต้องซับซ้อน เพียงเข้าใจสัดส่วนโปรตีน คาร์บ และไขมันที่เหมาะกับไลฟ์สไตล์ของตัวเอง เราสรุปหลักการวางแผนมื้ออาหารที่นำไปใช้ได้จริงแม้ในวันที่เวลาน้อยที่สุด</p>
+          <a href="blog.html" class="journal-readmore">
+            <span data-th="อ่านต่อ" data-en="Read More">อ่านต่อ</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="journal-foot">
+      <a href="blog.html" class="btn btn-ghost" data-th="ดูบทความทั้งหมด (View All Articles)" data-en="View All Articles">ดูบทความทั้งหมด (View All Articles)</a>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -326,6 +422,7 @@
           <li><a href="about.html" data-th="เรื่องราวของเรา" data-en="Our Story">เรื่องราวของเรา</a></li>
           <li><a href="products.html" data-th="ผลิตภัณฑ์" data-en="Products">ผลิตภัณฑ์</a></li>
           <li><a href="quality.html" data-th="มาตรฐานและใบรับรอง" data-en="Quality &amp; Standards">มาตรฐานและใบรับรอง</a></li>
+          <li><a href="blog.html" data-th="The Green Journal" data-en="The Green Journal">The Green Journal</a></li>
           <li><a href="contact.html" data-th="ติดต่อเรา" data-en="Contact">ติดต่อเรา</a></li>
         </ul>
       </div>

@@ -87,6 +87,22 @@ The Jelly product detail section has a swipeable 6-photo gallery (arrows + dots,
 | `assets/images/product-jelly-6.jpg` | Additional product photo | 1000×1000px (square) |
 | `assets/images/founder.jpg` | Founder/team photo (circular crop) | 400×400px (square) |
 
+## The Green Journal articles (`index.html` teaser + `blog.html`)
+
+Each article card takes one landscape thumbnail. To add a 7th (or later) article, copy
+a `<article class="journal-card">` block in `blog.html` (and, if it should also show on
+the homepage, in `index.html`'s journal section too), give it the next `journal-0N.jpg`
+filename, and update the text.
+
+| File | Used for | Suggested size |
+|---|---|---|
+| `assets/images/journal-01.jpg` | Article 1 — Plant-Based B12 | 1200×750px (16:10 landscape) |
+| `assets/images/journal-02.jpg` | Article 2 — 5 Healthy Wolffia Recipes | 1200×750px (16:10 landscape) |
+| `assets/images/journal-03.jpg` | Article 3 — Balanced Meal Planning | 1200×750px (16:10 landscape) |
+| `assets/images/journal-04.jpg` | Article 4 — Closed-System Cultivation | 1200×750px (16:10 landscape) |
+| `assets/images/journal-05.jpg` | Article 5 — Behind the Farm | 1200×750px (16:10 landscape) |
+| `assets/images/journal-06.jpg` | Article 6 — Plant Protein & Muscle Recovery | 1200×750px (16:10 landscape) |
+
 ## Our Story (`about.html`)
 
 | File | Used for |

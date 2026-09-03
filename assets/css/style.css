@@ -861,3 +861,74 @@ p { color: var(--ink-soft); }
   text-align: center;
 }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ==========================================================================
+   The Green Journal — blog / article cards
+   Copy one .journal-card block, swap the image/date/tag/title/excerpt/link
+   text, and drop it into .journal-grid. Nothing else needs to change.
+   ========================================================================== */
+.journal-grid { align-items: stretch; }
+.journal-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.journal-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.journal-card .ph-img { aspect-ratio: 16/10; height: auto; flex-shrink: 0; }
+.journal-card-body { padding: 22px 24px 26px; display: flex; flex-direction: column; flex: 1; }
+.journal-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.journal-tag {
+  background: var(--green-100);
+  color: var(--green-700);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+}
+.journal-date {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+}
+.journal-card h3 {
+  font-size: 1.08rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.journal-excerpt {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+.journal-readmore {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--green-700);
+  transition: gap .15s ease;
+}
+.journal-readmore svg { width: 16px; height: 16px; transition: transform .15s ease; }
+.journal-card:hover .journal-readmore { gap: 10px; }
+.journal-card:hover .journal-readmore svg { transform: translateX(2px); }
+
+.journal-foot { margin-top: 44px; text-align: center; }
