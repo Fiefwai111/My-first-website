@@ -492,7 +492,7 @@ p { color: var(--ink-soft); }
   display: flex;
   flex-direction: column;
 }
-.product-card .ph-img { aspect-ratio: 1/1; }
+.product-card .ph-img { aspect-ratio: 2/3; height: auto; flex-shrink: 0; }
 .product-card-body { padding: 26px 26px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
 .product-tag {
   align-self: flex-start;
