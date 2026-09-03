@@ -37,6 +37,6 @@ window.TRC_CONFIG = {
     { th: "วีแกน 100%", en: "100% Vegan certified", detail: "" },
     { th: "ผลตรวจวิตามินบี 12", en: "Vitamin B12 lab report", detail: "" },
     { th: "ใบรับรอง GMP (เพาะเลี้ยงระบบปิด)", en: "GMP certificate (closed-system cultivation)", detail: "" },
-    { th: "ผลตรวจ E. coli (น้อยกว่า 3, ตรวจทุกเดือน)", en: "E. coli lab report (< 3, tested monthly)", detail: "" }
+    { th: "ผลตรวจ E. coli (ไม่เกินมาตรฐาน, ตรวจทุกเดือน)", en: "E. coli lab report (within standard, tested monthly)", detail: "" }
   ]
 };

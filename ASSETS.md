@@ -21,7 +21,7 @@ These are the real certificates — 4 confirmed, all pending the actual scanned/
 |---|---|---|
 | `assets/images/cert-vegan.jpg` | 100% Vegan certificate | Portrait, e.g. 900×1200px |
 | `assets/images/cert-gmp.jpg` | GMP certificate (closed-system cultivation) | Portrait, e.g. 900×1200px |
-| `assets/images/cert-ecoli.jpg` | E. coli lab test report (&lt; 3, tested monthly) | Portrait, e.g. 900×1200px |
+| `assets/images/cert-ecoli.jpg` | E. coli lab test report (within standard, tested monthly) | Portrait, e.g. 900×1200px |
 | `assets/images/cert-b12.jpg` | Vitamin B12 lab test report (2.5x market) | Portrait, e.g. 900×1200px |
 
 A clear photo or scan of each document works fine — a phone photo on a flat surface is enough for launch; a proper scan can replace it later with zero code changes.

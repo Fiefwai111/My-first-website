@@ -17,7 +17,7 @@ no server required.
 | `index.html` | Landing page — hero, trust badges, story teaser, products, CTAs |
 | `about.html` | Our Story — R&D timeline, cultivation method, video, people |
 | `products.html` | Dried / Fresh / Jelly product details |
-| `quality.html` | Certifications, B12 data, E. coli &lt; 3 (tested monthly), closed-system GMP cultivation, export standards |
+| `quality.html` | Certifications, B12 data, E. coli within standard (tested monthly), closed-system GMP cultivation, export standards |
 | `contact.html` | B2B sample/RFQ form + B2C shop link and interest form |
 
 ## Editing content
