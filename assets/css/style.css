@@ -783,6 +783,20 @@ p { color: var(--ink-soft); }
 .faq-item h4 { font-size: 0.95rem; font-weight: 800; color: var(--green-900); margin-bottom: 4px; }
 .faq-item p { font-size: 0.88rem; color: var(--ink-soft); }
 
+/* ---------- B2C size options ---------- */
+.size-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+@media (max-width: 620px) { .size-grid { grid-template-columns: 1fr; } }
+.size-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  text-align: center;
+}
+.size-card .size-label { font-size: 0.78rem; color: var(--ink-faint); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.size-card .size-weight { font-size: 0.9rem; font-weight: 700; color: var(--green-900); margin-top: 4px; }
+.size-card .size-price { font-size: 1.15rem; font-weight: 800; color: var(--purple-600); margin-top: 6px; }
+
 /* ---------- lab-tested badges ---------- */
 .lab-badge-row { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 14px; }
 .lab-badge { display: flex; align-items: center; gap: 12px; }
