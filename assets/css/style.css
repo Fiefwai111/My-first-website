@@ -404,7 +404,6 @@ p { color: var(--ink-soft); }
   aspect-ratio: 1 / 1;
 }
 .gallery-carousel.ratio-4-5 .gallery-slide { aspect-ratio: 4 / 5; }
-.gallery-carousel.ratio-4-1 .gallery-slide { aspect-ratio: 4 / 1; }
 .gallery-arrow {
   position: absolute;
   top: 50%;

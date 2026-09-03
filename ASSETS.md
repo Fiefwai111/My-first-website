@@ -51,13 +51,13 @@ The homepage hero photo is now a 5-photo carousel — it auto-advances every ~4.
 
 ## Fullgreen dried Wolffia photo carousel (`products.html`, Dried section)
 
-The Dried Wolffia product detail section has a swipeable photo gallery (same arrows + dots as the Jelly one). Frame (wide banner, aspect ratio 4:1):
+The Dried Wolffia product detail section has a swipeable photo gallery (same arrows + dots as the Jelly one). Frame (portrait, aspect ratio 4:5, like a vertical Instagram post — same as the Fresh Wolffia gallery below):
 
 | File | Suggested content | Suggested size |
 |---|---|---|
-| `assets/images/product-dried-1.jpg` | Box + sachet product shot | 1600×400px (wide banner 4:1) |
-| `assets/images/product-dried-2.jpg` | Powder texture close-up | 1600×400px (wide banner 4:1) |
-| `assets/images/product-dried-3.jpg` | Mixed into a drink / smoothie | 1600×400px (wide banner 4:1) |
+| `assets/images/product-dried-1.jpg` | Box + sachet product shot | 1080×1350px (portrait 4:5) |
+| `assets/images/product-dried-2.jpg` | Powder texture close-up | 1080×1350px (portrait 4:5) |
+| `assets/images/product-dried-3.jpg` | Mixed into a drink / smoothie | 1080×1350px (portrait 4:5) |
 
 ## Fresh Wolffia photo carousel (`products.html`, Fresh section)
 
