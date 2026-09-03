@@ -94,17 +94,33 @@
       var next = car.querySelector(".gallery-next");
       if (!track || !slides.length) return;
 
+      var autoplayMs = parseInt(car.getAttribute("data-autoplay"), 10);
+      var autoplayTimer = null;
+
       function currentIndex() {
         return Math.round(track.scrollLeft / track.clientWidth);
       }
-      function goTo(i) {
-        i = Math.max(0, Math.min(slides.length - 1, i));
+      function goTo(i, silent) {
+        i = (i + slides.length) % slides.length;
         track.scrollTo({ left: slides[i].offsetLeft, behavior: "smooth" });
+        if (!silent) restartAutoplay();
       }
       function updateDots() {
         var idx = currentIndex();
         dots.forEach(function (d, i) { d.classList.toggle("active", i === idx); });
       }
+      function stopAutoplay() {
+        if (autoplayTimer) { clearInterval(autoplayTimer); autoplayTimer = null; }
+      }
+      function startAutoplay() {
+        if (!autoplayMs || slides.length < 2) return;
+        stopAutoplay();
+        autoplayTimer = setInterval(function () {
+          goTo(currentIndex() + 1, true);
+        }, autoplayMs);
+      }
+      function restartAutoplay() { startAutoplay(); }
+
       if (prev) prev.addEventListener("click", function () { goTo(currentIndex() - 1); });
       if (next) next.addEventListener("click", function () { goTo(currentIndex() + 1); });
       dots.forEach(function (d, i) {
@@ -114,7 +130,14 @@
         clearTimeout(track._dotTimer);
         track._dotTimer = setTimeout(updateDots, 100);
       });
+      // Manual touch/mouse interaction pauses autoplay while active, then resumes.
+      track.addEventListener("pointerdown", stopAutoplay);
+      track.addEventListener("pointerup", startAutoplay);
+      car.addEventListener("mouseenter", stopAutoplay);
+      car.addEventListener("mouseleave", startAutoplay);
+
       updateDots();
+      startAutoplay();
     });
   }
 

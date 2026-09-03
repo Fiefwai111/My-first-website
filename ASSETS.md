@@ -28,11 +28,22 @@ A clear photo or scan of each document works fine — a phone photo on a flat su
 
 Japan/US export standard are mentioned on the same page as standards met, but don't have a dedicated document placeholder yet — tell me the certifying body/document name whenever you have it and I'll add image slots for those too.
 
-## Homepage (`index.html`)
+## Homepage hero carousel (`index.html`)
+
+The homepage hero photo is now a 5-photo carousel — it auto-advances every ~4.5s, and can also be swiped/dragged or controlled with the arrow buttons and dots at any time. Frame (aspect ratio 4:5, portrait):
+
+| File | Suggested content | Suggested size |
+|---|---|---|
+| `assets/images/hero-farm.jpg` | Farm photo 1 | 1080×1350px (portrait 4:5) |
+| `assets/images/hero-2.jpg` | Farm photo 2 | 1080×1350px (portrait 4:5) |
+| `assets/images/hero-3.jpg` | Farm photo 3 | 1080×1350px (portrait 4:5) |
+| `assets/images/hero-4.jpg` | Farm photo 4 | 1080×1350px (portrait 4:5) |
+| `assets/images/hero-5.jpg` | Farm photo 5 | 1080×1350px (portrait 4:5) |
+
+## Homepage product cards (`index.html`)
 
 | File | Used for | Suggested size |
 |---|---|---|
-| `assets/images/hero-farm.jpg` | Hero photo of the farm | 1000×1250px (portrait), landscape works too |
 | `assets/images/product-dried.jpg` | Dried Wolffia (Fullgreen) product card | 800×800px (square) |
 | `assets/images/product-fresh.jpg` | Fresh Wolffia product card | 800×800px (square) |
 | `assets/images/product-jelly.jpg` | TA-TO Wolffia Jelly product card | 800×800px (square) |
@@ -40,13 +51,25 @@ Japan/US export standard are mentioned on the same page as standards met, but do
 
 ## Fullgreen dried Wolffia photo carousel (`products.html`, Dried section)
 
-The Dried Wolffia product detail section also has a swipeable photo gallery (same arrows + dots as the Jelly one), with 3 placeholder slots:
+The Dried Wolffia product detail section has a swipeable photo gallery (same arrows + dots as the Jelly one). Frame (wide banner, aspect ratio 4:1):
 
 | File | Suggested content | Suggested size |
 |---|---|---|
-| `assets/images/product-dried-1.jpg` | Box + sachet product shot | 1000×1000px (square) |
-| `assets/images/product-dried-2.jpg` | Powder texture close-up | 1000×1000px (square) |
-| `assets/images/product-dried-3.jpg` | Mixed into a drink / smoothie | 1000×1000px (square) |
+| `assets/images/product-dried-1.jpg` | Box + sachet product shot | 1600×400px (wide banner 4:1) |
+| `assets/images/product-dried-2.jpg` | Powder texture close-up | 1600×400px (wide banner 4:1) |
+| `assets/images/product-dried-3.jpg` | Mixed into a drink / smoothie | 1600×400px (wide banner 4:1) |
+
+## Fresh Wolffia photo carousel (`products.html`, Fresh section)
+
+The Fresh Wolffia product detail section has a swipeable 5-photo gallery. Frame (portrait, aspect ratio 4:5, like a vertical Instagram post):
+
+| File | Suggested content | Suggested size |
+|---|---|---|
+| `assets/images/product-fresh.jpg` | Fresh Wolffia photo 1 | 1080×1350px (portrait 4:5) |
+| `assets/images/product-fresh-2.jpg` | Fresh Wolffia photo 2 | 1080×1350px (portrait 4:5) |
+| `assets/images/product-fresh-3.jpg` | Fresh Wolffia photo 3 | 1080×1350px (portrait 4:5) |
+| `assets/images/product-fresh-4.jpg` | Fresh Wolffia photo 4 | 1080×1350px (portrait 4:5) |
+| `assets/images/product-fresh-5.jpg` | Fresh Wolffia photo 5 | 1080×1350px (portrait 4:5) |
 
 ## TA-TO Jelly photo carousel (`products.html`, Jelly section)
 
