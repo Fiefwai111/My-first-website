@@ -932,3 +932,29 @@ p { color: var(--ink-soft); }
 .journal-card:hover .journal-readmore svg { transform: translateX(2px); }
 
 .journal-foot { margin-top: 44px; text-align: center; }
+
+/* ---------- article callout / note box ---------- */
+.callout {
+  background: var(--green-050);
+  border-left: 4px solid var(--green-600);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+.callout strong { color: var(--green-800); }
+.callout.callout-muted {
+  background: var(--cream);
+  border-left-color: var(--purple-600);
+}
+
+/* ---------- article body ordered steps ---------- */
+.article-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 22px;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+.article-steps li { padding-left: 4px; }

@@ -102,6 +102,7 @@ filename, and update the text.
 | `assets/images/journal-04.jpg` | Article 4 — Closed-System Cultivation | 1200×750px (16:10 landscape) |
 | `assets/images/journal-05.jpg` | Article 5 — Behind the Farm | 1200×750px (16:10 landscape) |
 | `assets/images/journal-06.jpg` | Article 6 — Plant Protein & Muscle Recovery | 1200×750px (16:10 landscape) |
+| `assets/images/journal-07.jpg` | Article 7 — Vitamin B12: Why It Matters | 1200×750px (16:10 landscape) |
 
 ## Our Story (`about.html`)
 
