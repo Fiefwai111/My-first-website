@@ -96,7 +96,7 @@ filename, and update the text.
 
 | File | Used for | Suggested size |
 |---|---|---|
-| `assets/images/journal-01.jpg` | Article 1 — Plant-Based B12 | 1200×750px (16:10 landscape) |
+| `assets/images/journal-01.jpg` | *(retired — see journal-07.jpg below)* | — |
 | `assets/images/journal-02.jpg` | Article 2 — 5 Healthy Wolffia Recipes | 1200×750px (16:10 landscape) |
 | `assets/images/journal-03.jpg` | Article 3 — Balanced Meal Planning | 1200×750px (16:10 landscape) |
 | `assets/images/journal-04.jpg` | Article 4 — Closed-System Cultivation | 1200×750px (16:10 landscape) |
