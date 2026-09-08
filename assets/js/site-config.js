@@ -12,16 +12,13 @@ window.TRC_CONFIG = {
   lineUrl: "https://lin.ee/YZVohkc",
   lineLabel: "@thairivercaviar", // change to your real LINE OA display name if different
 
-  // Social channels — shown in the footer "Contact" list.
+  // Social channels — shown in the footer "Contact" list, and used as the
+  // 3 retail "buy now" buttons (Facebook Inbox / LINE OA / TikTok Shop) on
+  // the homepage, products page, and Contact page.
   tiktokUrl: "https://www.tiktok.com/@thairivercaviar?_r=1&_t=ZS-99MV9kBi0W4",
-  facebookUrl: "https://www.facebook.com/share/19bbik582o/?mibextid=wwXIfr",
+  facebookUrl: "https://web.facebook.com/profile.php?id=61572949151550",
 
-  // Add a real number once you have one, e.g. "+66 89 123 4567"
-  phone: "",
-
-  // Retail / B2C storefront (Shopee, Lazada, LINE MyShop, your own shop, etc.)
-  // Once you send the real link, paste it here and the "Shop now" buttons go live.
-  shopUrl: "",
+  phone: "+66 87 114 6471",
 
   // Farm / company address — shown in the footer and Contact page. HTML allowed
   // (e.g. <br>) since it's rendered via data-cfg-html.
