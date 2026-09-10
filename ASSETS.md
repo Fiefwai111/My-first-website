@@ -47,7 +47,6 @@ The homepage hero photo is now a 5-photo carousel — it auto-advances every ~4.
 | `assets/images/product-dried.jpg` | Dried Wolffia (Fullgreen) product card | 800×800px (square) |
 | `assets/images/product-fresh.jpg` | Fresh Wolffia product card | 800×800px (square) |
 | `assets/images/product-jelly.jpg` | TA-TO Wolffia Jelly product card | 800×800px (square) |
-| `assets/images/product-jelly-lifestyle.jpg` | B2C jelly lifestyle photo | 1000×750px |
 
 ## Fullgreen dried Wolffia photo carousel (`products.html`, Dried section)
 

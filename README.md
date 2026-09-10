@@ -7,8 +7,8 @@ no server required.
 - **B2B first**: home page, product pages, and quality/certification page are
   built to speak to supplement, cosmetics, and food-manufacturing buyers.
 - **B2C second**: a lighter "shop retail" path for the ready-to-eat Wolffia
-  jelly, via `contact.html#b2c` and buttons that link out to your existing
-  online shop.
+  jelly, via the Order-via-LINE / TikTok Shop / Facebook buttons in each
+  product section on `products.html`.
 
 ## Pages
 
