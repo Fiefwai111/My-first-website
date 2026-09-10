@@ -50,32 +50,35 @@ The homepage hero photo is now a 5-photo carousel — it auto-advances every ~4.
 
 ## Fullgreen dried Wolffia photo carousel (`products.html`, Dried section)
 
-The Dried Wolffia product detail section has a swipeable 4-photo gallery (same arrows + dots as the Jelly one). Frame (portrait, aspect ratio 4:5, like a vertical Instagram post — same as the Fresh Wolffia gallery below):
+The Dried Wolffia product detail section has a swipeable 5-photo gallery (same arrows + dots as the Jelly one). Frame (portrait, aspect ratio 4:5, like a vertical Instagram post — same as the Fresh Wolffia gallery below):
 
 | File | Suggested content | Suggested size |
 |---|---|---|
 | `assets/images/product-dried-1.jpg` | Box + sachet product shot | 1080×1350px (portrait 4:5) |
 | `assets/images/product-dried-2.jpg` | Powder texture close-up | 1080×1350px (portrait 4:5) |
 | `assets/images/product-dried-3.jpg` | Mixed into a drink / smoothie | 1080×1350px (portrait 4:5) |
-| `assets/images/product-dried-4.jpg` | Additional lifestyle photo | 1080×1350px (portrait 4:5) |
+| `assets/images/product-dried-4.jpg` | Sachet in hand | 1080×1350px (portrait 4:5) |
+| `assets/images/product-dried-5.jpg` | Additional lifestyle photo | 1080×1350px (portrait 4:5) |
 
 ## Fresh Wolffia photo carousel (`products.html`, Fresh section)
 
-The Fresh Wolffia detail section has a swipeable 4-photo gallery. Frame (portrait, aspect ratio 4:5, like a vertical Instagram post). `product-fresh.jpg` is *not* in this list on purpose — it's the card photo at the top of the page, and showing it again in the gallery repeated the same shot twice on one page.
+The Fresh Wolffia product detail section has a swipeable 5-photo gallery. Frame (portrait, aspect ratio 4:5, like a vertical Instagram post):
 
 | File | Suggested content | Suggested size |
 |---|---|---|
-| `assets/images/product-fresh-bread.jpg` | **Needed** — fresh Wolffia served on bread with chocolate spread (shows what to eat it with) | 1080×1350px (portrait 4:5) |
-| `assets/images/product-fresh-3.jpg` | Fresh Wolffia with sliced bread and a prepared dish | 1080×1350px (portrait 4:5) |
-| `assets/images/product-fresh-hands.jpg` | **Needed** — hands holding two cups of fresh Wolffia, one showing the label (gives a sense of scale) | 1080×1350px (portrait 4:5) |
-| `assets/images/product-fresh-5.jpg` | Fresh Wolffia lifestyle photo | 1080×1350px (portrait 4:5) |
+| `assets/images/product-fresh.jpg` | Fresh Wolffia photo 1 | 1080×1350px (portrait 4:5) |
+| `assets/images/product-fresh-2.jpg` | Fresh Wolffia photo 2 | 1080×1350px (portrait 4:5) |
+| `assets/images/product-fresh-3.jpg` | Fresh Wolffia photo 3 | 1080×1350px (portrait 4:5) |
+| `assets/images/product-fresh-4.jpg` | Fresh Wolffia photo 4 | 1080×1350px (portrait 4:5) |
+| `assets/images/product-fresh-5.jpg` | Fresh Wolffia photo 5 | 1080×1350px (portrait 4:5) |
 
 ## TA-TO Jelly photo carousel (`products.html`, Jelly section)
 
-The Jelly product detail section has a swipeable 5-photo gallery (arrows + dots, works with touch swipe too). Each slot below is independent — you can reuse the marketing graphics you already have.
+The Jelly product detail section has a swipeable 6-photo gallery (arrows + dots, works with touch swipe too). Each slot below is independent — you can reuse the marketing graphics you already have.
 
 | File | Suggested content | Suggested size |
 |---|---|---|
+| `assets/images/product-jelly-1.jpg` | Hero product shot (box + jelly stick) | 1000×1000px (square) |
 | `assets/images/product-jelly-2.jpg` | Lab-tested standards graphic (FQA LAB / ALS logos) | 1000×1000px (square) |
 | `assets/images/product-jelly-3.jpg` | "Best time to eat" lifestyle collage | 1000×1000px (square) |
 | `assets/images/product-jelly-4.jpg` | Texture close-up (dried Wolffia flecks) | 1000×1000px (square) |
