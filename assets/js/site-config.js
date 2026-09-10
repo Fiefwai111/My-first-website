@@ -26,7 +26,11 @@ window.TRC_CONFIG = {
   //   https://youtu.be/XXXXXXXXXXX
   //   https://www.youtube.com/watch?v=XXXXXXXXXXX
   // Leave a slot as "" and it shows a "coming soon" panel instead.
-  farmVideos: ["", "", ""],
+  farmVideos: [
+    "https://youtube.com/shorts/uqaS26eVgks",
+    "https://youtube.com/shorts/38QD6m0gvf4",
+    "https://youtube.com/shorts/nIEw52QNPZQ"
+  ],
 
   // Farm / company address — shown in the footer and Contact page. HTML allowed
   // (e.g. <br>) since it's rendered via data-cfg-html.
