@@ -118,15 +118,41 @@
     <div class="section-head center">
       <div class="eyebrow" data-th="ชมฟาร์มของเรา" data-en="See The Farm">ชมฟาร์มของเรา</div>
       <h2 data-th="วิดีโอพาชมฟาร์มไทย ริเวอร์ คาเวียร์" data-en="A video tour of the Thai River Caviar farm">วิดีโอพาชมฟาร์มไทย ริเวอร์ คาเวียร์</h2>
+      <p class="lede" style="margin-top:14px; margin-left:auto; margin-right:auto;" data-th="พาเดินชมทุกขั้นตอน ตั้งแต่บ่อเพาะเลี้ยงระบบปิด การเก็บเกี่ยว ไปจนถึงการบรรจุ" data-en="Walk through every step with us — from the closed-system cultivation ponds to harvesting and packing.">พาเดินชมทุกขั้นตอน ตั้งแต่บ่อเพาะเลี้ยงระบบปิด การเก็บเกี่ยว ไปจนถึงการบรรจุ</p>
     </div>
-    <div class="video-block">
-      <video controls poster="assets/images/farm-wide.jpg">
-        <source src="assets/video/farm-tour.mp4" type="video/mp4">
-      </video>
-      <div class="video-fallback">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2C9.4 22 2 14.6 2 6a2 2 0 0 1 2-2z"/></svg>
-        <p style="color:#fff;" data-th="วิดีโอพาชมฟาร์มจะแสดงที่นี่" data-en="Your farm tour video will appear here">วิดีโอพาชมฟาร์มจะแสดงที่นี่</p>
-        <code style="background:rgba(255,255,255,0.15); color:#fff; padding:3px 8px; border-radius:6px; font-size:0.72rem;">assets/video/farm-tour.mp4</code>
+
+    <!--
+      Farm tour videos — paste the 3 YouTube links into `farmVideos` in
+      assets/js/site-config.js. Each slot below stays as a "coming soon"
+      panel until its link is filled in.
+    -->
+    <div class="video-grid-vertical">
+      <div>
+        <div class="video-vertical" data-yt-slot="0" data-yt-title="Thai River Caviar farm tour 1">
+          <div class="video-slot-empty">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M20 8v8"/></svg>
+            <span data-th="วิดีโอที่ 1 จะแสดงที่นี่" data-en="Video 1 will appear here">วิดีโอที่ 1 จะแสดงที่นี่</span>
+          </div>
+        </div>
+        <p class="video-caption" data-th="บ่อเพาะเลี้ยงระบบปิด" data-en="Closed-system cultivation ponds">บ่อเพาะเลี้ยงระบบปิด</p>
+      </div>
+      <div>
+        <div class="video-vertical" data-yt-slot="1" data-yt-title="Thai River Caviar farm tour 2">
+          <div class="video-slot-empty">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M20 8v8"/></svg>
+            <span data-th="วิดีโอที่ 2 จะแสดงที่นี่" data-en="Video 2 will appear here">วิดีโอที่ 2 จะแสดงที่นี่</span>
+          </div>
+        </div>
+        <p class="video-caption" data-th="การเก็บเกี่ยวและล้างทำความสะอาด" data-en="Harvesting &amp; washing">การเก็บเกี่ยวและล้างทำความสะอาด</p>
+      </div>
+      <div>
+        <div class="video-vertical" data-yt-slot="2" data-yt-title="Thai River Caviar farm tour 3">
+          <div class="video-slot-empty">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M20 8v8"/></svg>
+            <span data-th="วิดีโอที่ 3 จะแสดงที่นี่" data-en="Video 3 will appear here">วิดีโอที่ 3 จะแสดงที่นี่</span>
+          </div>
+        </div>
+        <p class="video-caption" data-th="การบรรจุและเก็บรักษา" data-en="Packing &amp; cold storage">การบรรจุและเก็บรักษา</p>
       </div>
     </div>
   </div>

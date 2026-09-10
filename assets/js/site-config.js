@@ -20,6 +20,14 @@ window.TRC_CONFIG = {
 
   phone: "+66 87 114 6471",
 
+  // Farm tour videos (vertical / YouTube Shorts) shown on the "Our Story" page.
+  // Paste the YouTube link in any of these forms — the site works out the ID:
+  //   https://www.youtube.com/shorts/XXXXXXXXXXX
+  //   https://youtu.be/XXXXXXXXXXX
+  //   https://www.youtube.com/watch?v=XXXXXXXXXXX
+  // Leave a slot as "" and it shows a "coming soon" panel instead.
+  farmVideos: ["", "", ""],
+
   // Farm / company address — shown in the footer and Contact page. HTML allowed
   // (e.g. <br>) since it's rendered via data-cfg-html.
   address: "Thai River Caviar Co., Ltd.<br>37/9 หมู่ 2 ต.บึงทองหลาง อ.ลำลูกกา จ.ปทุมธานี 12150 (สำนักงานใหญ่)<br>37/9 Moo 2, T. Buengthonglang, A. Lumlukka, Pathumthani 12150, Thailand (Head Office)",

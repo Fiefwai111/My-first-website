@@ -108,9 +108,31 @@ filename, and update the text.
 
 | File | Used for |
 |---|---|
-| `assets/images/farm-wide.jpg` | Wide shot of the farm (racks/troughs) — also used as video poster |
+| `assets/images/farm-wide.jpg` | Wide shot of the farm (racks/troughs) |
 | `assets/images/farm-people.jpg` | Photo of the farm team at work |
-| `assets/video/farm-tour.mp4` | Farm tour video (MP4, H.264 recommended, keep under ~50MB for fast loading) |
+
+### Farm tour videos (3 vertical clips)
+
+These are **not** uploaded as files — they're YouTube links, so there's no size
+limit and YouTube handles the streaming. Upload each clip to YouTube (Public or
+Unlisted both work), then paste the 3 links into `farmVideos` in
+**`assets/js/site-config.js`**:
+
+```js
+farmVideos: [
+  "https://www.youtube.com/shorts/XXXXXXXXXXX",
+  "https://youtu.be/XXXXXXXXXXX",
+  "https://www.youtube.com/watch?v=XXXXXXXXXXX"
+],
+```
+
+Any of those three link formats works — the site extracts the video ID itself.
+Each slot left as `""` shows a tidy "coming soon" panel instead of a broken
+player. The players are sized 9:16 (vertical), so shoot/export them portrait.
+
+> Why not upload the MP4? GitHub's web uploader caps files at 25MB, and a repo
+> is a poor place for large video anyway — every visitor would download the full
+> file at full quality.
 
 ## Products (`products.html`)
 

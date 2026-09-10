@@ -245,6 +245,33 @@
     });
   }
 
+  // Accepts a full YouTube link (Shorts, youtu.be, or watch?v=) or a bare ID.
+  function youTubeId(value) {
+    var raw = String(value || "").trim();
+    if (!raw) return "";
+    if (/^[A-Za-z0-9_-]{11}$/.test(raw)) return raw;
+    var m = raw.match(/(?:shorts\/|youtu\.be\/|[?&]v=|\/embed\/|\/live\/)([A-Za-z0-9_-]{11})/);
+    return m ? m[1] : "";
+  }
+
+  function initFarmVideos() {
+    var slots = document.querySelectorAll("[data-yt-slot]");
+    if (!slots.length) return;
+    var list = cfg.farmVideos || [];
+    slots.forEach(function (slot) {
+      var id = youTubeId(list[parseInt(slot.getAttribute("data-yt-slot"), 10)]);
+      if (!id) return; // leave the "coming soon" panel in place
+      var frame = document.createElement("iframe");
+      frame.src = "https://www.youtube-nocookie.com/embed/" + id + "?rel=0&playsinline=1";
+      frame.title = slot.getAttribute("data-yt-title") || "Thai River Caviar farm video";
+      frame.loading = "lazy";
+      frame.allow = "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      frame.allowFullscreen = true;
+      slot.innerHTML = "";
+      slot.appendChild(frame);
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initLangSwitch();
     initNavToggle();
@@ -252,6 +279,7 @@
     initGalleryCarousels();
     bindConfig();
     initMailtoForms();
+    initFarmVideos();
     initYear();
   });
 })();
