@@ -1008,3 +1008,5 @@ p { color: var(--ink-soft); }
   font-size: 1rem;
 }
 .article-steps li { padding-left: 4px; }
+
+.nowrap { white-space: nowrap; }
