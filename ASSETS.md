@@ -107,6 +107,7 @@ filename, and update the text.
 
 | File | Used for |
 |---|---|
+| `assets/images/wolffia-closeup.jpg` | **Macro close-up of fresh Wolffia** — sits in the "What is Wolffia?" block above the videos. Landscape, cropped to 16:9; 1600×900px or larger. |
 | `assets/images/farm-wide.jpg` | Wide shot of the farm (racks/troughs) |
 | `assets/images/farm-people.jpg` | Photo of the farm team at work |
 
