@@ -32,6 +32,9 @@ no server required.
 - **Images/video**: see [`ASSETS.md`](./ASSETS.md) for the exact filenames the
   site expects. Drop a file in with the right name and it appears — no code
   changes needed. Until then, a clean placeholder is shown.
+- **Blog posts**: see [`BLOG-GUIDE.md`](./BLOG-GUIDE.md) — the rules every
+  Green Journal article follows (length, images, hook, Thai FDA claim limits,
+  and the draft-preview-confirm workflow), written in Thai.
 - **Design tokens** (colors, fonts, spacing): `assets/css/style.css`, under
   `:root` at the top of the file.
 
