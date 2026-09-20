@@ -88,20 +88,26 @@ The Jelly product detail section has a swipeable 6-photo gallery (arrows + dots,
 
 ## The Green Journal articles (`index.html` teaser + `blog.html`)
 
-Each article card takes one landscape thumbnail. To add a 7th (or later) article, copy
-a `<article class="journal-card">` block in `blog.html` (and, if it should also show on
-the homepage, in `index.html`'s journal section too), give it the next `journal-0N.jpg`
-filename, and update the text.
+Each article needs one landscape cover. Covers are generated from an existing
+photo with the title set over it — no new photography needed — so a new article
+only needs a `journal-NN.jpg` cover plus any in-article graphics as
+`journal-NN-<name>.jpg`.
 
-| File | Used for | Suggested size |
+| File | Used for | Status |
 |---|---|---|
-| `assets/images/journal-01.jpg` | *(retired — see journal-07.jpg below)* | — |
-| `assets/images/journal-02.jpg` | Article 2 — 5 Healthy Wolffia Recipes | 1200×750px (16:10 landscape) |
-| `assets/images/journal-03.jpg` | Article 3 — Balanced Meal Planning | 1200×750px (16:10 landscape) |
-| `assets/images/journal-04.jpg` | Article 4 — Closed-System Cultivation | 1200×750px (16:10 landscape) |
-| `assets/images/journal-05.jpg` | Article 5 — Behind the Farm | 1200×750px (16:10 landscape) |
-| `assets/images/journal-06.jpg` | Article 6 — Plant Protein & Muscle Recovery | 1200×750px (16:10 landscape) |
-| `assets/images/journal-07.jpg` | Article 7 — Vitamin B12: Why It Matters | 1200×750px (16:10 landscape) |
+| `assets/images/journal-07.jpg` | Vitamin B12: Why It Matters | ✅ in place |
+| `assets/images/journal-08.jpg` | How to Eat Wolffia — cover | ✅ in place |
+| `assets/images/journal-08-compare.jpg` | Fresh vs. powder comparison table | ✅ generated |
+| `assets/images/journal-08-steps.jpg` | Wash-and-store diagram | ✅ generated |
+| `assets/images/journal-08-menu.jpg` | 8-dish quick reference | ✅ generated |
+| `assets/images/journal-09.jpg` | How Much Protein Is in Wolffia — cover | ✅ in place |
+| `assets/images/journal-09-drytable.jpg` | Protein per 100 g, dried foods | ✅ generated |
+| `assets/images/journal-09-amino.jpg` | Essential amino acid completeness | ✅ generated |
+| `assets/images/journal-09-dryfresh.jpg` | Dry weight vs. fresh weight | ✅ generated |
+| `assets/images/journal-09-verdict.jpg` | What each product form suits | ✅ generated |
+
+Articles 02–06 were retired in favour of longer pieces written to
+[`BLOG-GUIDE.md`](./BLOG-GUIDE.md); their image slots are gone with them.
 
 ## Our Story (`about.html`)
 
