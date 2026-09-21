@@ -89,6 +89,19 @@
     document.querySelectorAll(".gallery-carousel").forEach(function (car) {
       var track = car.querySelector(".gallery-track");
       var slides = car.querySelectorAll(".gallery-slide");
+      // Build one dot per slide, so adding or removing a slide can never leave
+      // the hardcoded dot count out of step with what the track actually holds.
+      var dotBox = car.querySelector(".gallery-dots");
+      if (dotBox) {
+        dotBox.innerHTML = "";
+        slides.forEach(function (_, i) {
+          var dot = document.createElement("button");
+          dot.type = "button";
+          dot.className = "gallery-dot" + (i === 0 ? " active" : "");
+          dot.setAttribute("aria-label", "Photo " + (i + 1));
+          dotBox.appendChild(dot);
+        });
+      }
       var dots = car.querySelectorAll(".gallery-dot");
       var prev = car.querySelector(".gallery-prev");
       var next = car.querySelector(".gallery-next");
