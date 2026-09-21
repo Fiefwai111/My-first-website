@@ -480,7 +480,9 @@ p { color: var(--ink-soft); }
 
 .stat-card { text-align: center; padding: 34px 20px; }
 .stat-num { font-size: clamp(2rem, 3.4vw, 2.6rem); font-weight: 800; color: var(--green-700); line-height: 1; }
-.stat-label { margin-top: 10px; font-size: 0.86rem; font-weight: 700; color: var(--ink-soft); }
+/* The subject leads, so a reader knows what the figure is before reading it. */
+.stat-topic { font-size: 1.05rem; font-weight: 800; color: var(--ink); line-height: 1.3; margin-bottom: 7px; }
+.stat-label { margin-top: 8px; font-size: 0.86rem; font-weight: 600; color: var(--ink-soft); }
 .stat-note { margin-top: 6px; font-size: 0.76rem; color: var(--ink-faint); }
 
 /* Two headline figures in one card, read top to bottom, with the
@@ -490,7 +492,8 @@ p { color: var(--ink-soft); }
 .stat-split-row + .stat-split-row { border-top: 1px solid rgba(20, 60, 35, 0.09); }
 .stat-split .stat-num { display: flex; align-items: baseline; gap: 0; font-size: clamp(2.4rem, 4.4vw, 3.1rem); }
 .stat-unit { margin-left: 7px; font-size: 1rem; font-weight: 700; color: var(--ink-soft); letter-spacing: 0.01em; }
-.stat-split .stat-label { margin-top: 9px; font-size: 0.9rem; }
+.stat-split .stat-label { margin-top: 6px; font-size: 0.88rem; }
+.stat-split .stat-topic { font-size: 1.02rem; margin-bottom: 4px; }
 .stat-foot { margin-top: 18px; padding-top: 15px; border-top: 1px solid rgba(20, 60, 35, 0.09);
   font-size: 0.75rem; line-height: 1.65; color: var(--ink-faint); }
 .stat-foot strong { color: var(--green-700); font-weight: 700; }
