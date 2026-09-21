@@ -483,6 +483,23 @@ p { color: var(--ink-soft); }
 .stat-label { margin-top: 10px; font-size: 0.86rem; font-weight: 700; color: var(--ink-soft); }
 .stat-note { margin-top: 6px; font-size: 0.76rem; color: var(--ink-faint); }
 
+/* Two headline figures in one card, read top to bottom, with the
+   accreditation line carried underneath so the numbers never travel alone. */
+.stat-split { text-align: left; padding: 30px 30px 26px; }
+.stat-split-row { padding: 16px 0; }
+.stat-split-row + .stat-split-row { border-top: 1px solid rgba(20, 60, 35, 0.09); }
+.stat-split .stat-num { display: flex; align-items: baseline; gap: 9px; font-size: clamp(2.4rem, 4.4vw, 3.1rem); }
+.stat-unit { font-size: 1rem; font-weight: 700; color: var(--ink-soft); letter-spacing: 0.01em; }
+.stat-split .stat-label { margin-top: 9px; font-size: 0.9rem; }
+.stat-foot { margin-top: 18px; padding-top: 15px; border-top: 1px solid rgba(20, 60, 35, 0.09);
+  font-size: 0.75rem; line-height: 1.65; color: var(--ink-faint); }
+.stat-foot strong { color: var(--green-700); font-weight: 700; }
+/* Stacked on a phone, the figures should arrive before the explanation. */
+@media (max-width: 620px) {
+  .stat-lead .stat-split { order: -1; margin-bottom: 8px; }
+}
+
+
 /* product cards */
 .product-card {
   background: var(--white);
