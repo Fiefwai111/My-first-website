@@ -243,7 +243,8 @@
   // so tapping one opens it full screen, and tapping again zooms past the fit-to-screen size.
   function initLightbox() {
     var targets = document.querySelectorAll(
-      ".cert-doc-card img, .gallery-slide img, main figure .ph-img img, section figure .ph-img img");
+      ".cert-doc-card img, .card-photo .card-shot img, .gallery-slide img, " +
+      "main figure .ph-img img, section figure .ph-img img");
     if (!targets.length) return;
 
     var box = document.createElement("div");
