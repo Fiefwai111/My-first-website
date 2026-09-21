@@ -1018,3 +1018,57 @@ p { color: var(--ink-soft); }
   font-size: 0.86rem;
   color: var(--ink-soft);
 }
+
+/* ---- Image lightbox: tap any document, chart or product photo to read it full size ---- */
+.zoomable { cursor: zoom-in; }
+
+.lightbox {
+  position: fixed; inset: 0; z-index: 200;
+  background: rgba(8, 24, 14, 0.92);
+  display: none; align-items: center; justify-content: center;
+  padding: 56px 16px 16px;
+  overscroll-behavior: contain;
+}
+.lightbox.open { display: flex; }
+.lightbox-stage {
+  max-width: 100%; max-height: 100%;
+  overflow: auto;                 /* zoomed state scrolls; pinch-zoom still works on top */
+  -webkit-overflow-scrolling: touch;
+  display: flex; align-items: center; justify-content: center;
+}
+.lightbox img {
+  display: block;
+  max-width: 100%; max-height: calc(100vh - 88px);
+  border-radius: var(--radius-md);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+  cursor: zoom-in;
+  background: #fff;
+}
+.lightbox.zoomed .lightbox-stage { align-items: flex-start; justify-content: flex-start; }
+.lightbox.zoomed img { max-width: none; max-height: none; width: 1400px; cursor: zoom-out; border-radius: 0; }
+
+/* a solid strip keeps the hint and close button legible over any document */
+.lightbox::before {
+  content: ""; position: fixed; top: 0; left: 0; right: 0; height: 58px;
+  background: linear-gradient(180deg, rgba(8,24,14,0.96) 55%, rgba(8,24,14,0));
+  pointer-events: none;
+}
+.lightbox-close, .lightbox-hint {
+  position: fixed; color: #fff; font-family: var(--font-th), sans-serif; z-index: 1;
+}
+.lightbox-close {
+  top: 12px; right: 14px;
+  width: 42px; height: 42px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.35); background: rgba(255,255,255,0.08);
+  font-size: 24px; line-height: 1; cursor: pointer;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.2); }
+.lightbox-hint {
+  top: 20px; left: 16px; font-size: 0.82rem; font-weight: 600;
+  color: rgba(255,255,255,0.72); pointer-events: none;
+}
+@media (max-width: 640px) {
+  .lightbox { padding: 52px 8px 8px; }
+  .lightbox.zoomed img { width: 1100px; }
+  .lightbox-hint { font-size: 0.75rem; }
+}

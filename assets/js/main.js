@@ -239,6 +239,68 @@
     });
   }
 
+  // Certificates, charts and product photos carry detail that is unreadable at card size,
+  // so tapping one opens it full screen, and tapping again zooms past the fit-to-screen size.
+  function initLightbox() {
+    var targets = document.querySelectorAll(
+      ".cert-doc-card img, .gallery-slide img, main figure .ph-img img, section figure .ph-img img");
+    if (!targets.length) return;
+
+    var box = document.createElement("div");
+    box.className = "lightbox";
+    box.innerHTML =
+      '<span class="lightbox-hint"></span>' +
+      '<button class="lightbox-close" type="button" aria-label="Close">&times;</button>' +
+      '<div class="lightbox-stage"><img alt=""></div>';
+    document.body.appendChild(box);
+
+    var stage = box.querySelector(".lightbox-stage");
+    var big = box.querySelector("img");
+    var hint = box.querySelector(".lightbox-hint");
+
+    function setHint() {
+      var en = document.body.classList.contains("lang-en");
+      hint.textContent = box.classList.contains("zoomed")
+        ? (en ? "Tap the image to zoom out" : "แตะที่ภาพเพื่อย่อกลับ")
+        : (en ? "Tap the image to zoom in" : "แตะที่ภาพเพื่อซูมเข้า");
+    }
+    function close() {
+      box.classList.remove("open", "zoomed");
+      document.body.style.overflow = "";
+      big.removeAttribute("src");
+    }
+    function open(src, alt) {
+      big.src = src;
+      big.alt = alt || "";
+      box.classList.add("open");
+      box.classList.remove("zoomed");
+      document.body.style.overflow = "hidden";
+      setHint();
+    }
+
+    targets.forEach(function (img) {
+      // a thumbnail that already links somewhere (the PDF cards) keeps its link
+      if (img.closest("a")) return;
+      img.classList.add("zoomable");
+      img.addEventListener("click", function () {
+        if (!img.complete || !img.naturalWidth) return;   // placeholder, nothing to show
+        open(img.currentSrc || img.src, img.getAttribute("alt"));
+      });
+    });
+
+    big.addEventListener("click", function () {
+      box.classList.toggle("zoomed");
+      stage.scrollTop = 0;
+      stage.scrollLeft = Math.max(0, (big.offsetWidth - stage.clientWidth) / 2);
+      setHint();
+    });
+    box.querySelector(".lightbox-close").addEventListener("click", close);
+    box.addEventListener("click", function (e) { if (e.target === box || e.target === stage) close(); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && box.classList.contains("open")) close();
+    });
+  }
+
   function initYear() {
     document.querySelectorAll("[data-year]").forEach(function (el) {
       el.textContent = new Date().getFullYear();
@@ -280,6 +342,7 @@
     bindConfig();
     initMailtoForms();
     initFarmVideos();
+    initLightbox();
     initYear();
   });
 })();
