@@ -593,6 +593,16 @@ p { color: var(--ink-soft); }
 .cert-badge h4 { font-weight: 800; color: var(--green-900); font-size: 0.98rem; margin-bottom: 3px; }
 .cert-badge span { font-size: 0.82rem; color: var(--ink-faint); }
 
+/* A flag marks a destination we ship to, so it is drawn as a flag —
+   a rounded rectangle with a hairline edge, not the round icon badge,
+   which on this page reads as a seal of approval. */
+.cert-badge .cert-flag {
+  width: 46px; height: 32px; border-radius: 5px; flex-shrink: 0; overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(20, 60, 35, 0.14), 0 1px 3px rgba(20, 60, 35, 0.12);
+  background: #fff;
+}
+.cert-badge .cert-flag svg { display: block; width: 100%; height: 100%; }
+
 .pending-note {
   display: inline-flex;
   align-items: center;
